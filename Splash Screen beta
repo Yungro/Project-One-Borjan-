@@ -18,7 +18,6 @@ private static void constructGUI(){
     SplashScreen splash = SplashScreen.getSplashScreen();
     if (splash != null) {Graphics2D g = (Graphics2D) splash.createGraphics();
     for(int i = 0; i < 12; i++) {
-    //initializing isn't cool and professional and looks cheesy against a background.
     g.setComposite(AlphaComposite.Clear);
     g.fillRect(130, 350, 280, 40);
     g.setPaintMode ();
@@ -27,13 +26,11 @@ private static void constructGUI(){
     g.fillRect(130, 370, i * 30, 20);
     splash.update();
     try {
-    //sleeping makes it look professional, but we want it to execute something.
-    
     }catch (InterruptedException e){
     e.printStackTrace();}}}
     JFrame frame = new JFrame("Början");
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    frame.setSize(400, 400);
+    frame.setSize(800, 800);
     frame.setLocationRelativeTo(null);
     frame.setVisible(true);
     
