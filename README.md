@@ -7,10 +7,15 @@ Borjan is supposed to be a game based on minecraft, but it will be different in 
 * It is possible to copy and paste objects that were made.
 * This is essentially a mod.
 
-## Versions ##
+## Log ##
 April 30, 2017
 - First version of Borjan created
 - Read me made
 May 4, 2017
 - LikesToSmile makes changes to splash screen
 - Changes accepted
+## Versions ##
+April 30, 2017
+- Beta version of splash screen made
+- Splash screen 1.1 created
+* Gets rid of words on loading bar
