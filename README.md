@@ -8,3 +8,9 @@ Borjan is supposed to be a game based on minecraft, but it will be different in 
 * This is essentially a mod.
 
 ## Versions ##
+April 30, 2017
+- First version of Borjan created
+- Read me made
+May 4, 2017
+- LikesToSmile makes changes to splash screen
+- Changes accepted
