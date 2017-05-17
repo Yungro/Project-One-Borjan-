@@ -22,15 +22,13 @@ private static void constructGUI(){
     g.fillRect(130, 350, 280, 40);
     g.setPaintMode ();
     g.setColor(Color.GREEN);
-    g.drawString(message, 130, 360);
+    g.drawString("Början", 130, 360);
     g.fillRect(130, 370, i * 30, 20);
     splash.update();
-    try {
-    }catch (InterruptedException e){
-    e.printStackTrace();}}}
+}}
     JFrame frame = new JFrame("Början");
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    frame.setSize(800, 800);
+    frame.setSize(1200, 1000);
     frame.setLocationRelativeTo(null);
     frame.setVisible(true);
     
