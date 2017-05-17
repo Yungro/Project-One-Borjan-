@@ -19,3 +19,5 @@ April 30, 2017
 - Beta version of splash screen made
 - Splash screen 1.1 created
      Gets rid of words on loading bar
+# Note: #
+If you want to oparticipate, comment
