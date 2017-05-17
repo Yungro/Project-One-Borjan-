@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Top Five</title>
+
+</head>
+  <style>
+    #opacity
+    {opacity:0.7;
+     position:relative;
+    }
+    a:link 
+    {text-decoration:none;
+    opacity:0.5;
+    color:white;
+      position:relative;}
+    .button {
+      background-color: #4CAF50; 
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      position:relative;
+    }
+  </style>
+  <body background="https://static.pexels.com/photos/305211/pexels-photo-305211.jpeg">
+<div id="opacity">
+<h1 style="color:gray;font-family:Arial, Helvetica, sans-serif;font-size:45px;text-align:center;">
+  Top Five Best Programming Languages
+</h1><center>
+  <img id="opacity" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Prog-languages.png">
+  </center>
+    </div>
+    <div id="link">
+  <ol style="color:gray;font-family:Arial, Helvetica; font-size:20px">
+    <li><a href="https://www.oracle.com/java/index.html">Java</a></li>
+    <li><a href="https://isocpp.org/">C++</a></li>
+    <li><a href="https://msdn.microsoft.com/en-us/library/aa288436(v=vs.71).aspx">C#</a></li>
+    <li><a href="https://www.rust-lang.org/en-US/">Rust</a></li>
+    <li><a href="https://www.javascript.com/">Javascript</a></li>
+    </ol>
+      <p style="color:gray;font-family:Arial, Helvetica; font-size:20px">
+        
+      </p>
+    </div>
+    <center>
+    <button class="button" id="button">Next</button>
+</center>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      var Finish = function() {
+        $("h1").text("Java: The Best Language");
+        $("ol").text("");
+        $("p").text("Java is my favorite language. Java was made by James Gosling at and for Sun Microsystems as a core component. Java is mainly based on C and C++. It was made in 1995.")
+        $("img").animate({left: '250px'});              
+      };
+                    
+                    $("#button").on("click", function() {
+          Finish();
+        });
+    </script>
+  </body>
+</html>
