@@ -20,4 +20,4 @@ April 30, 2017
 - Splash screen 1.1 created
      Gets rid of words on loading bar
 # Note: #
-If you want to oparticipate, comment
+If you want to participate, comment
