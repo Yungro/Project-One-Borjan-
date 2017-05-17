@@ -14,6 +14,8 @@ April 30, 2017
 May 4, 2017
 - LikesToSmile makes changes to splash screen
 - Changes accepted
+May 17, 2017
+- Borjan official website creation begun
 ## Versions ##
 April 30, 2017
 - Beta version of splash screen made
