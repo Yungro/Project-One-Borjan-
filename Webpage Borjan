@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Finals Second Edition</title>
-
+ 
   </head>
   <style>
     #opacity
@@ -30,38 +30,41 @@
       display: inline-block;
       font-size: 16px;
       position:relative;
+      margin:1px;
+    }
+    #panel, #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #3a3b3d;
+      border-radius: 8px;
+    }
+ 
+    #panel {
+      padding: 50px;
+      display: none;
     }
   </style>
-  <body style="background-color:#24DDDA;">
+  <body background="https://cdn.pixabay.com/photo/2017/01/02/11/10/sky-1946508_960_720.png">
     <div id="opacity">
       <h1 style="color:white;font-family:Arial, Helvetica, sans-serif;font-size:45px;text-align:center;">
-        Easy HTML submission using COLE
+        Början: A New Beginning
       </h1>
+      <h2 style="color:white;font-size:40px;font-family:Arial, Helvetica, sans-serif; text-align:center;">
+        Indtroduction
+      </h2>
       <hr>
-      <strong style="color:black">
-        Use the following list to cut and paste your html file into Notepad. Then, you can save it as an html file and upload that to COLE.
+      <h3 style="text-align:center;">
+      <strong style="color:White;">
+        Adventure awakens, and in this new mod made by IH Studios, the game of Minecraft will change. Creating your own adventure map will be simple and easy. Try out other maps and post your own to display your creation. It is all up to you to decide where adventure will lead your players. Where will your horizons take you?
       </strong>
+      </h3>
     </div>
+    <div id="flip" style="color:white">IH Studios</div>
+    <div id="panel" style="color:white;">IH Studios was created to create programs. We try to deliver the best content to your computers. IH Studios has yet again began another project called Början, or swedish for beginning. This was originally created to be its own game, but then it was turned into a mod for Minecraft, making gameplay quick and easy.</div>
     <div id="link">
-      <ol style="color:black;font-family:Arial, Helvetica;">
-        <li>Select you entire html code from the editor you are using. Use Ctrl + C to Copy.
-        <li>
-          Then, open a new notepad file. You can do this by clicking the Windows start button, type "notepad" into the search bar. Double click the notepad icon. You should see an empty notepad window when you open it.
-        </li>
-        <li>
-          Paste your html code into the notepad window. It may look like a jumbled mess, but it will still function properly.
-        <li>
-          In notepad, clid "File>Save As". In the save window you must change the drop down box from .txt file to all files. Do that now.
-        <li>
-          Type the file name "MiniProject.html" and save to your H: Drive so that you can find it for submission.
-        <li>
-          Submit your file via COLE
-
-        </li>
-      </ol>
-      <a href="https://cole.cherrycreekschools.org/course/634094903/materials"> 
+      <a href="https://github.com/idoering/Project-One-Borjan-"> 
         <center>
-          <button class="button" id="link">Go to the COLE to Try it yourself</button>
+          <button class="button" id="link">Join the Crew</button>
         </center>
       </a>
     </div>
@@ -69,11 +72,10 @@
       <p>
       </p>
     </div>
-
+ 
    
   <center>
-    <button class="button" id="button">Minimize/Expand</button>
-    <div id="square" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+    <button class="button" id="button">What is IH Studios</button>
     </center>
     
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -86,15 +88,15 @@
           });
           });
       });
-    $("#square").click(function(){
-      $("#square").animate({height: '300px', opacity: '0.4'}, "slow");
-      $("#square").animate({width: '300px', opacity: '0.8'}, "slow");
-      $("#square").animate({height: '100px', opacity: '0.4'}, "slow");
-      $("#square").animate({width: '100px', opacity: '0.8'}, "slow");
-      
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+      });
     });
+    
                         
   </script>
   </body>
 </html>
-
+ 
+ 
