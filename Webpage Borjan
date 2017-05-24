@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Top Five</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finals Second Edition</title>
 
-</head>
+  </head>
   <style>
     #opacity
-    {opacity:0.7;
-     position:relative;
+    {opacity:1;
+      position:relative;
     }
     a:link 
     {text-decoration:none;
-    opacity:0.5;
-    color:white;
+      opacity:1;
+      color:black;
+      position:relative;}
+    #link 
+    {text-decoration:none;
+      opacity:1;
       position:relative;}
     .button {
       background-color: #4CAF50; 
@@ -28,42 +32,69 @@
       position:relative;
     }
   </style>
-  <body background="https://static.pexels.com/photos/305211/pexels-photo-305211.jpeg">
-<div id="opacity">
-<h1 style="color:gray;font-family:Arial, Helvetica, sans-serif;font-size:45px;text-align:center;">
-  Top Five Best Programming Languages
-</h1><center>
-  <img id="opacity" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Prog-languages.png">
-  </center>
+  <body style="background-color:#24DDDA;">
+    <div id="opacity">
+      <h1 style="color:white;font-family:Arial, Helvetica, sans-serif;font-size:45px;text-align:center;">
+        Easy HTML submission using COLE
+      </h1>
+      <hr>
+      <strong style="color:black">
+        Use the following list to cut and paste your html file into Notepad. Then, you can save it as an html file and upload that to COLE.
+      </strong>
     </div>
     <div id="link">
-  <ol style="color:gray;font-family:Arial, Helvetica; font-size:20px">
-    <li><a href="https://www.oracle.com/java/index.html">Java</a></li>
-    <li><a href="https://isocpp.org/">C++</a></li>
-    <li><a href="https://msdn.microsoft.com/en-us/library/aa288436(v=vs.71).aspx">C#</a></li>
-    <li><a href="https://www.rust-lang.org/en-US/">Rust</a></li>
-    <li><a href="https://www.javascript.com/">Javascript</a></li>
-    </ol>
-      <p style="color:gray;font-family:Arial, Helvetica; font-size:20px">
-        
+      <ol style="color:black;font-family:Arial, Helvetica;">
+        <li>Select you entire html code from the editor you are using. Use Ctrl + C to Copy.
+        <li>
+          Then, open a new notepad file. You can do this by clicking the Windows start button, type "notepad" into the search bar. Double click the notepad icon. You should see an empty notepad window when you open it.
+        </li>
+        <li>
+          Paste your html code into the notepad window. It may look like a jumbled mess, but it will still function properly.
+        <li>
+          In notepad, clid "File>Save As". In the save window you must change the drop down box from .txt file to all files. Do that now.
+        <li>
+          Type the file name "MiniProject.html" and save to your H: Drive so that you can find it for submission.
+        <li>
+          Submit your file via COLE
+
+        </li>
+      </ol>
+      <a href="https://cole.cherrycreekschools.org/course/634094903/materials"> 
+        <center>
+          <button class="button" id="link">Go to the COLE to Try it yourself</button>
+        </center>
+      </a>
+    </div>
+    <div id="animation">
+      <p>
       </p>
     </div>
-    <center>
-    <button class="button" id="button">Next</button>
-</center>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
-      var Finish = function() {
-        $("h1").text("Java: The Best Language");
-        $("ol").text("");
-        $("p").text("Java is my favorite language. Java was made by James Gosling at and for Sun Microsystems as a core component. Java is mainly based on C and C++. It was made in 1995.")
-        $("img").animate({left: '250px'});              
-      };
-                    
-                    $("#button").on("click", function() {
-          Finish();
-        });
-    </script>
+
+   
+  <center>
+    <button class="button" id="button">Minimize/Expand</button>
+    <div id="square" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+    </center>
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+                        $(document).ready(function(){
+        $("button").click(function(){
+          $("div").animate({
+            height:'toggle'
+          });
+          });
+      });
+    $("#square").click(function(){
+      $("#square").animate({height: '300px', opacity: '0.4'}, "slow");
+      $("#square").animate({width: '300px', opacity: '0.8'}, "slow");
+      $("#square").animate({height: '100px', opacity: '0.4'}, "slow");
+      $("#square").animate({width: '100px', opacity: '0.8'}, "slow");
+      
+    });
+                        
+  </script>
   </body>
 </html>
+
